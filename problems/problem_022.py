@@ -7,4 +7,11 @@
 #     "surfboard"
 
 def gear_for_day(is_workday, is_sunny):
-    pass
+
+    if not is_sunny and is_workday:
+        return ["umbrella", "laptop"]
+    elif is_workday:
+        return ["laptop"]
+    elif not is_workday:
+        return ["surfboard"]
+
