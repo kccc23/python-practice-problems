@@ -14,4 +14,3 @@ def minimum_value(value1, value2):
         return value1
     else:
         return value2
-
