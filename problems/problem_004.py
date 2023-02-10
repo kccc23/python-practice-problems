@@ -13,4 +13,7 @@
 # problem to get a good feel for how to solve it.
 
 def max_of_three(value1, value2, value3):
-    pass
+
+    ascend_list = [value1, value2, value3]
+    ascend_list.sort()
+    return ascend_list[2]
