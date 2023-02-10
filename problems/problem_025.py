@@ -7,4 +7,14 @@
 #
 
 def calculate_sum(values):
-    pass
+
+    sum = 0
+
+    if not values:
+        return None
+    else:
+        for value in values:
+            sum += value
+
+        return sum
+
