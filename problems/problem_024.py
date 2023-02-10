@@ -7,5 +7,13 @@
 #
 # Pseudocode is available for you
 
+import statistics
+
 def calculate_average(values):
-    pass
+
+    if not values:
+        return None
+    else:
+        mean_values = statistics.mean(values)
+        return mean_values
+
