@@ -23,4 +23,3 @@ def sum_of_squares(values):
 
         return sum_squares
 
-print(sum_of_squares([-1, 0, 1]))

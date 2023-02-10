@@ -22,4 +22,20 @@
 
 
 def count_letters_and_digits(s):
-    pass
+
+    count_letters = 0
+    count_digits = 0
+
+    for item in s:
+        if item.isalpha():
+            count_letters += 1
+        elif item.isdigit():
+            count_digits += 1
+
+    # for item in s:
+    #     if item in ["0","1","2","3","4","5","6","7","8","9"]:
+    #         count_digits += 1
+    #     elif item != "" and item != " ":
+    #         count_letters += 1
+
+    return count_letters, count_digits

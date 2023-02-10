@@ -16,4 +16,15 @@
 # problem to get a good feel for how to solve it.
 
 def sum_of_first_n_even_numbers(n):
-    pass
+
+    if n < 0:
+        return None
+    else:
+        sum = 0
+        for num in range(int(n*2)+1):
+            if num%2 == 0:
+                sum += num
+
+        return sum
+
+
