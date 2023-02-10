@@ -5,4 +5,18 @@
 #
 
 def max_in_list(values):
-    pass
+
+    max = values[0]
+
+    if not values:
+        return None
+
+    # else:
+    #     values.sort()
+    #     return values[-1]
+
+    else:
+        for value in values:
+            if value > max:
+                max = value
+        return max

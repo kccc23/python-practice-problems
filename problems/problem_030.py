@@ -12,4 +12,12 @@
 # problem to get a good feel for how to solve it.
 
 def find_second_largest(values):
-    pass
+
+    if not values or len(values) == 1:
+        return None
+    else:
+        uni_values = list(dict.fromkeys(values))
+        largest = max(uni_values)
+        uni_values.remove(largest)
+        return max(uni_values)
+
