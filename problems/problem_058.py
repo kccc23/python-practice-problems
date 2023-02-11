@@ -22,3 +22,13 @@
 #
 # You may want to look up the ".strip()" method for the string.
 
+def group_cities_by_state(cities):
+
+    cities_by_state = {}
+
+    for city in cities:
+        city.split(", ")
+        cities_by_state[city[1]] = []
+        cities_by_state[city[1]].append(city)
+
+    return cities_by_state

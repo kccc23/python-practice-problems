@@ -12,3 +12,12 @@
 #    * input: [1, 2, 3]
 #      result: [1, 2], [3]
 
+import math
+
+def halve_the_list(full_list):
+
+    first_list = full_list[: (math.ceil(len(full_list)/2))]
+
+    second_list = full_list[-(int(len(full_list)/2)):]
+
+    return first_list, second_list

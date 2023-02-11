@@ -27,7 +27,19 @@
 # Do it without pseudocode, this time, from memory. Don't look
 # at the last one you just wrote unless you really must.
 
+from itertools import product
+
 def make_sentences(subjects, verbs, objects):
 
+    # 3 for loops is crazy, I'm not doing that
+
     sentences = []
-    
+
+    # for sentence in (f"{s} {v} {o}" for s in subjects for v in verbs for o in objects):
+    #     sentences.append(sentence)
+
+    for sentence in product(subjects, verbs, objects):
+        sentences.append("{} {} {}".format(*sentence))
+
+    return sentences
+

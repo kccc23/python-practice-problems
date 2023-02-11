@@ -15,3 +15,10 @@
 #     and 7 into a list
 #   * Use random.choice to select one
 
+import random
+
+def specific_random():
+
+    divisible_5 = [num for num in range(10,501) if num%5 == 0 and num%7 == 0]
+
+    return random.choice(divisible_5)

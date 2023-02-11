@@ -13,3 +13,12 @@
 #     * input:   [1, 3, 5, 7]
 #       returns: [1, 3, 5, 7]
 
+def only_odds(nums):
+
+    odds = []
+
+    for num in nums:
+        if num%2 == 1:
+            odds.append(num)
+
+    return odds

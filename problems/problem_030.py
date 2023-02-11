@@ -17,7 +17,9 @@ def find_second_largest(values):
         return None
     else:
         uni_values = list(dict.fromkeys(values))
-        largest = max(uni_values)
-        uni_values.remove(largest)
-        return max(uni_values)
+        # largest = max(uni_values)
+        # uni_values.remove(largest)
+        # return max(uni_values)
+        uni_values.sort()
+        return uni_values[-2]
 

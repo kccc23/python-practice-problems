@@ -28,3 +28,26 @@
 #     * input: 10
 #       returns:  "X"
 
+def simple_roman(value):
+
+    if value == 1:
+        return "I"
+    elif value == 2:
+        return "II"
+    elif value == 3:
+        return "III"
+    elif value == 4:
+        return "IV"
+    elif value == 5:
+        return "V"
+    elif value == 6:
+        return "VI"
+    elif value == 7:
+        return "VII"
+    elif value == 8:
+        return "VIII"
+    elif value == 9:
+        return "IX"
+    elif value == 10:
+        return "X"
+

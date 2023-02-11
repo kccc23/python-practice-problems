@@ -31,4 +31,3 @@ def biggest_gap(values):
 
     return largest_gap
 
-print (biggest_gap([1]))

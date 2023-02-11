@@ -21,3 +21,17 @@
 # You may want to look at the built-in Python functions
 # "ord" and "chr" for this problem
 
+def shift_letters(word):
+
+    shifted_word = ""
+
+    for c in word:
+        if c == "z" or c == "Z":
+            shifted_word += chr(ord(c)-25)
+        else:
+            shifted_word += chr(ord(c)+1)
+
+    # print("inputs: ", word)
+    # print("result: ", shifted_word)
+
+    return shifted_word
