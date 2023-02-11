@@ -17,3 +17,18 @@
 #
 # You may want to look at the built-in "abs" function
 
+def biggest_gap(values):
+
+    value_iterate = values[0]
+    largest_gap = 0
+
+    for value in values:
+
+        if largest_gap <= abs(value - value_iterate):
+            largest_gap = abs(value - value_iterate)
+
+        value_iterate = value
+
+    return largest_gap
+
+print (biggest_gap([1]))

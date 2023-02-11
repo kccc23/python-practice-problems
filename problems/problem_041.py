@@ -21,4 +21,15 @@
 # Write out your own pseudocode to help guide you.
 
 def add_csv_lines(csv_lines):
-    pass
+
+    sums = []
+
+    for csv_line in csv_lines:
+        sum = 0
+        num_list = csv_line.split(",")
+        for num in num_list:
+            sum += int(num)
+
+        sums.append(sum)
+
+    return sums

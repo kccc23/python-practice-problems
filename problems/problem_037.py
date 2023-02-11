@@ -24,4 +24,11 @@
 #     result: "   19"
 
 def pad_left(number, length, pad):
-    pass
+    num_str = str(number)
+
+    if len(num_str) >= length:
+        return num_str
+    else:
+        return pad*(length - len(num_str)) + num_str
+
+

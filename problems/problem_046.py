@@ -28,4 +28,6 @@
 # at the last one you just wrote unless you really must.
 
 def make_sentences(subjects, verbs, objects):
-    pass
+
+    sentences = []
+    
