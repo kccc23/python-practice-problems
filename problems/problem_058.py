@@ -27,8 +27,12 @@ def group_cities_by_state(cities):
     cities_by_state = {}
 
     for city in cities:
-        city.split(", ")
-        cities_by_state[city[1]] = []
-        cities_by_state[city[1]].append(city)
+        city_split = city.split(", ")
+        if city_split[1] in cities_by_state:
+            cities_by_state[city_split[1]].append(city_split[0])
+        else:
+            cities_by_state[city_split[1]] = []
+            cities_by_state[city_split[1]].append(city_split[0])
 
     return cities_by_state
+
