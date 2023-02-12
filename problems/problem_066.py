@@ -18,6 +18,22 @@
 #
 # There is pseudocode availabe for you to guide you
 
+class Book:
+
+    def __init__(self, author_name, title):
+        self.author_name = author_name
+        self.title = title
+
+    def get_author(self):
+        return f"Author: {self.author_name}"
+
+    def get_title(self):
+        return f"Title: {self.title}"
+
+book = Book("Natalie Zina Walschots", "Hench")
+
+print(book.get_author())  # prints "Author: Natalie Zina Walschots"
+print(book.get_title())   # prints "Title: Hench"
 
 # class Book
     # method initializer method with required state
