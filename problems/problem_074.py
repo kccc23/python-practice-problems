@@ -21,6 +21,28 @@
 #
 # There is pseudocode for you to guide you.
 
+class BankAccount:
+    def __init__(self, open_balance):
+        self.balance = open_balance
+
+    def get_balance(self):
+        return self.balance
+
+    def deposit(self, amount):
+        self.balance += amount
+        return self.balance
+
+    def withdraw(self, amount):
+        self.balance -= amount
+        return self.balance
+
+account = BankAccount(100)
+
+print(account.get_balance())  # prints 100
+account.withdraw(50)
+print(account.get_balance())  # prints 50
+account.deposit(120)
+print(account.get_balance())  # prints 170
 
 
 # class BankAccount
