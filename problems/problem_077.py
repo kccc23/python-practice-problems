@@ -29,7 +29,7 @@ class Circle:
         return math.pi*self.radius*2
 
     def calculate_area(self):
-        return math.pow(self.radius, 2)*math.pi
+        return pow(self.radius, 2)*math.pi
 
 circle = Circle(10)
 

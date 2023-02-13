@@ -23,6 +23,6 @@ class ReceiptItem:
     def get_total(self):
         return self.quantity * self.price
 
-item = ReceiptItem(10, 3.45)
+# item = ReceiptItem(10, 3.45)
 
-print(item.get_total())    # Prints 34.5
+# print(item.get_total())    # Prints 34.5

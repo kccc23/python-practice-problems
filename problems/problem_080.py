@@ -18,22 +18,42 @@
 #    print(item.get_subtotal())     # Prints 20
 #    print(item.get_total())        # Prints 22
 
-class ReceiptItem:
+from problem_079 import ReceiptItem
 
-    def __init__(self, quantity, price):
-        self.quantity = quantity
-        self.price = price
+# class ReceiptItem:
 
-    def get_total(self):
-        return self.quantity * self.price
+#     def __init__(self, quantity, price):
+#         self.quantity = quantity
+#         self.price = price
 
-class Receipt(ReceiptItem):
+#     def get_total(self):
+#         return self.quantity * self.price
+
+class Receipt:
 
     def __init__(self, tax_rate):
-        super().__init__()
+        self.tax_rate = tax_rate
+        self.items = []
 
     def add_item(self,item):
+        self.items.append(item)
 
+    def get_subtotal(self):
+
+        subtotal = 0
+        for item in self.items:
+            subtotal += item.get_total()
+        return subtotal
+
+    def get_total(self):
+        return self.get_subtotal() * (1+self.tax_rate)
+
+item = Receipt(.1)
+item.add_item(ReceiptItem(4, 2.50))
+item.add_item(ReceiptItem(2, 5.00))
+
+print(item.get_subtotal())     # Prints 20
+print(item.get_total())        # Prints 22
 
 # class Receipt
     # method initializer with tax rate
